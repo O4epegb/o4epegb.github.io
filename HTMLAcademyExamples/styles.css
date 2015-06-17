@@ -37,6 +37,8 @@ section {
     padding-top: 60px;
     color: #fff;
     background: rgba(75, 90, 120, .5);
+    opacity: 0;
+    transition: all .3s ease-in-out;
 }
 
 .details header {
@@ -124,19 +126,21 @@ section {
 /* protoss effects */
 
 .item.protoss .details {
-    left: -300px;
-    transition: all .4s linear;
+    left: -130px;
+    transition: all .4s ease;
     
 }
 
 .item:hover .details {
     left: 0px;
     visibility: visible;
+    
+    opacity: 1;
 }
 
 .item.protoss:hover .overlay {
     transform: translateX(300px);
-    transition: .4s ease;
+    transition: .3s ease;
     opacity: 0.5;
 }
 
