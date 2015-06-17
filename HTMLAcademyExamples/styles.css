@@ -98,6 +98,7 @@ section {
     outline: 0;
     transition: .6s ease-out;
     transform: scale(1);
+    background-size: cover;
 }
 /* terran effects */
 
@@ -140,5 +141,5 @@ section {
 }
 
 .overlay.octagon {
-    background-image: url(/Images/oct.svg);
+    background-image: url(Images/oct.png);
 }
