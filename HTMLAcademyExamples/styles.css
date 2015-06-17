@@ -9,9 +9,9 @@ body {
 }
 
 .container {
-    position: absolute;
+    position: relative;
     margin: auto;
-    background: rgb(51, 53, 80);
+    background: #161616;
 }
 
 section {
