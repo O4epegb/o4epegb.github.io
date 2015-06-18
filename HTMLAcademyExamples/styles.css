@@ -31,6 +31,7 @@ section {
 .item .details {
     position: relative;
     /* display: none; */
+    
     visibility: hidden;
     width: 300px;
     height: 300px;
@@ -128,13 +129,11 @@ section {
 .item.protoss .details {
     left: -130px;
     transition: all .4s ease;
-    
 }
 
 .item:hover .details {
     left: 0px;
     visibility: visible;
-    
     opacity: 1;
 }
 
@@ -146,4 +145,94 @@ section {
 
 .overlay.octagon {
     background-image: url(Images/oct.png);
+}
+/* links */
+
+.links {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 2px 10px;
+    margin: auto 30px;
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    display: inline-block;
+    outline: none;
+}
+
+.links a:nth-of-type(1) {
+    color: #1A4F77
+}
+
+.links a:nth-of-type(2) {
+    color: #774486
+}
+
+.links a:nth-of-type(3) {
+    color: #B39627
+}
+
+.effect-1 a:nth-of-type(1):hover::before,
+.effect-1 a:nth-of-type(1):hover::after {
+    opacity: 1;
+    background-color: #1A4F77;
+}
+
+.effect-1 a:nth-of-type(2):hover::before,
+.effect-1 a:nth-of-type(2):hover::after {
+    opacity: 1;
+    background-color: #774486;
+}
+
+.effect-1 a:nth-of-type(3):hover::before,
+.effect-1 a:nth-of-type(3):hover::after {
+    opacity: 1;
+    background-color: #B39627;
+}
+
+.effect-1 a::before,
+.effect-1 a::after {
+    position: absolute;
+    width: 37px;
+    height: 2px;
+    background: #fff;
+    content: '';
+    opacity: 0.05;
+    transition: all 0.3s;
+}
+
+.effect-1 a::before {
+    top: 10%;
+    left: 0;
+    transform: rotate(90deg);
+    transform-origin: 0 0;
+}
+
+.effect-1 a::after {
+    right: 0;
+    bottom: 10%;
+    transform: rotate(90deg);
+    transform-origin: 100% 0;
+}
+
+.effect-1 a:hover::before,
+.effect-1 a:hover::after {
+    opacity: 1;
+}
+
+.effect-1 a:hover::before {
+    left: 50%;
+    transform: rotate(0) translateX(-50%);
+}
+
+.effect-1 a:hover::after {
+    right: 50%;
+    transform: rotate(0) translateX(50%);
 }
