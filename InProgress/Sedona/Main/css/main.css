@@ -81,7 +81,7 @@ body {
 }
 
 .theader-content {
-    background-image: url('/images/bg-slide.png'), url('/images/bg-intro.jpg');
+    background-image: url('../images/bg-slide.png'), url('../images/bg-intro.jpg');
     height: 550px;
     background-repeat: repeat-x;
     background-position: bottom center, top center;
