@@ -34,7 +34,7 @@ section {
     
     visibility: hidden;
     width: 300px;
-    height: 300px;
+    height: 250px;
     padding-top: 60px;
     color: #fff;
     background: rgba(75, 90, 120, .5);
@@ -159,7 +159,6 @@ section {
     text-transform: uppercase;
     padding: 2px 10px;
     margin: auto 30px;
-    position: relative;
     height: 45px;
     line-height: 45px;
     position: relative;
@@ -235,4 +234,55 @@ section {
 .effect-1 a:hover::after {
     right: 50%;
     transform: rotate(0) translateX(50%);
+}
+/* slider */
+
+.slider {
+    position: relative;
+    width: 640px;
+    padding-top: 420px;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 15px;
+}
+
+.slider__check {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.slider__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.slider__label {
+    overflow: hidden;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #93856c;
+    border-radius: 50%;
+    text-indent: -9999px;
+}
+/* Display */
+
+.slider__image {
+    visibility: hidden;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.slider__check:checked + .slider__label + .slider__image {
+    visibility: visible;
+    opacity: 1;
+    
+}
+/* Current */
+
+.slider__check:checked + .slider__label {
+    background: #1B4378;
 }
