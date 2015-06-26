@@ -1,0 +1,53 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	
+}
+body input:required:valid,
+body textarea:required:valid {
+	
+}
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+
+.header-menu  {
+    width: 100%;
+    text-align: center;
+}
+
+.header-menu ul {
+    font-size: 0;
+    
+}
+
+.header-menu li {
+    list-style-type: none;
+    display: inline-block;
+    width: 20%;
+    font-size: 16px;
+    border: 1px solid black;
+}
+
+.header-menu a {
+    height: 50px;
+    line-height: 50px;
+    display: block;
+}
