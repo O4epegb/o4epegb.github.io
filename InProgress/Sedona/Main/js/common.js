@@ -95,7 +95,7 @@ $(document).ready(function () {
     function e() {
         var e = {
                 center: n,
-                zoom: 10,
+                zoom: 12,
                 mapTypeId: google.maps.MapTypeId.ROADMAP
             },
             o = new google.maps.Map(document.getElementById("googleMap"), e),
@@ -105,7 +105,7 @@ $(document).ready(function () {
             });
         l.setMap(o);
         var a = new google.maps.InfoWindow({
-            content: "<p>Id's habbenings! /_(o,o)_/</p>"
+            content: "<p>Welcome to Sedona!</p>"
         });
         google.maps.event.addListener(l, "click", function () {
             a.open(o, l)
@@ -136,6 +136,6 @@ $(document).ready(function () {
     }), $("#plus-child").click(function (e) {
         a.val() >= 0 && a.val() < 99 ? a.val(+a.val() + 1) : a.val() >= 100 && a.val(99)
     });
-    var n = new google.maps.LatLng(34.8697395, -111.7609896);
+    var n = new google.maps.LatLng(34.869946, -111.761156);
     google.maps.event.addDomListener(window, "load", e)
 });
