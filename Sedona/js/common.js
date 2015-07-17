@@ -1,5 +1,3 @@
-$(document).ready(function () {
-
 //Кнопка плюс минус, поп-ап, карта
 $(document).ready(function () {
     function e() {
