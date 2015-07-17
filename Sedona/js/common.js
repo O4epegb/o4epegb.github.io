@@ -1,5 +1,9 @@
 //Кнопка плюс минус, поп-ап, карта
 $(document).ready(function () {
+	$(".theader-menu__list--mobile-button").click(function(){
+        $(this).next().slideToggle();
+    })
+	
     function e() {
         var e = {
                 center: n,
