@@ -86,6 +86,64 @@ h3 {
     background-color: transparent;
 }
 
+
+.theader-menu__list--mobile {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0px;
+    
+}
+
+
+.theader-menu__list--mobile li {
+    display: inline-block;
+    width: 50%;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 14px;
+}
+
+.theader-menu__list--mobile a {
+    color: #0b0b0b;
+    display: block;
+    background-color: #fff;
+    line-height: 56px;
+    height: 56px;
+    font-family: "PTSansBold", sans-serif;
+    font-size: 14px;
+}
+
+.theader-menu__list--mobile-button {
+    font-size: 30px;
+    color: #0b0b0b;
+    display: block;
+    background-color: #fff;
+    line-height: 56px;
+    height: 56px;
+    border: none;
+    width: 100%;
+    
+}
+
+.theader-menu__list--dropdown {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.theader-menu__list--dropdown li {
+    width: 100%;
+    border-bottom: 1px solid #000;
+}
+
+.theader-menu__list--mobile-button:hover,
+.theader-menu__list--dropdown a:hover,
+.theader-menu__list--dropdown a.active {
+    color: #91B7D1;
+}
+
 .theader-content {
     background-image: url('../images/bg-slide.png'), url('../images/bg-intro.jpg');
     height: 550px;
@@ -225,10 +283,11 @@ h3 {
 }
 
 .features-order {
+    height: 100%;
     text-align: center;
     padding: 50px;
-    padding-bottom: 0;
-    height: 290px;
+    padding-bottom: 80px;
+    min-height: 290px;
     position: relative;
 }
 
@@ -241,13 +300,14 @@ h3 {
 .features-order__label {
     height: 84px;
     line-height: 84px;
+    
 }
 
 .features-order__button {
-    width: 566px;
+    display: block;
+    width: 50%;
     height: 84px;
     color: #fff;
-    margin: 0 auto;
     background-color: #766357;
     font-family: 'PTSansBold';
     font-size: 21px;
@@ -284,8 +344,8 @@ h3 {
 
 .features-order__popup {
     position: absolute;
-    width: 566px;
-    height: 394px;
+    width: 50%;
+    height: auto;
     top: 290px;
     left: 50%;
     background-color: #FFF;
@@ -310,25 +370,26 @@ h3 {
 }
 
 .features-order__popup-date {
-    height: 38px;
+    min-height: 38px;
     margin-bottom: 29px;
+    max-width: 100%;
 }
 
 .features-order__popup-date__label {
-    width: 22%;
     display: inline-block;
     line-height: 38px;
-    height: 38px;
+    min-height: 38px;
 }
 
 .features-order__popup-date__in,
 .features-order__popup-date__out {
+    float: right;
     background-color: #F2F2F2;
     border: none;
     line-height: 38px;
     height: 38px;
     margin-left: 18px;
-    width: 73%;
+    width: 70%;
     position: relative;
     padding-left: 10px
 }
@@ -500,12 +561,11 @@ h3 {
 }
 
 .main-footer-wrapper {
-    height: 120px;
+    height: auto;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.9);
     position: absolute;
     transform: translateY(-100%);
-    margin-left: 15px;
 }
 
 .main-footer-section {
@@ -817,8 +877,6 @@ h3 {
     bottom: 0;
     height: 70px;
     line-height: 70px;
-    
-   
 }
 
 .hotels-search__sorting-arrow--up {
@@ -827,7 +885,6 @@ h3 {
     background-image: url(../images/hotels-sprite.png);
     background-repeat: no-repeat;
     background-position: 0 0;
-    
 }
 
 .hotels-search__sorting-arrow--down {
@@ -881,6 +938,14 @@ h3 {
     margin-top: -6px
 }
 
+.hotel-search-result__description--name:hover {
+    color: #81B3D2;
+}
+
+.hotel-search-result__description--name:active {
+    color: #ABABAB;
+}
+
 .hotel-search-result__description--type,
 .hotel-search-result__description--price {
     display: inline-block;
@@ -905,6 +970,24 @@ h3 {
     margin-right: 150px;
 }
 
+.hotel-search-result__description--more:hover {
+    background-color: #669EC0;
+}
+
+.hotel-search-result__description--more:active {
+    background-color: #5496BD;
+    color: #94B9D2;
+}
+
+.hotel-search-result__description--book:hover {
+    background-color: #604E43;
+}
+
+.hotel-search-result__description--book:active {
+    background-color: #503E33;
+    color: #928A85;
+}
+
 .hotel-search-result__ratings {
     position: absolute;
     top: 26px;
@@ -913,7 +996,6 @@ h3 {
 
 .hotel-search-result__ratings--stars {
     margin-bottom: 035px;
-    
     text-align: right;
 }
 
@@ -928,10 +1010,11 @@ h3 {
 
 .hotel-search-result__ratings--number {
     display: block;
-    padding: 8px 16px;
     background-color: #F2F2F2;
     width: 115px;
     float: right;
+    text-align: center;
+    padding: 8px 0;
 }
 
 .hotel-search-result__ratings--number p {

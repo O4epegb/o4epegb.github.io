@@ -15,9 +15,6 @@
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
     <link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
-    <link rel="stylesheet" href="libs/owl-carousel/owl.carousel.css" />
-    <link rel="stylesheet" href="libs/countdown/jquery.countdown.css" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/media.css" />
@@ -34,19 +31,41 @@
                                 <div class="col-md-12">
                                     <nav class="theader-menu">
                                         <ul class="theader-menu__list hotels">
-                                            <li><a class="active" href="/InProgress/Main/index.html">Информация</a>
+                                            <li><a  href="index.html">Информация</a>
                                             </li>
                                             <li><a href="#index.html">Фото и видео</a>
                                             </li>
                                             <li>
-                                                <a href="/InProgress/Main/index.html"><img src="images/logo.png" alt="City Of Sedona">
+                                                <a href="index.html"><img src="images/logo.png" alt="City Of Sedona">
                                                 </a>
                                             </li>
                                             <li><a href="#index.html">Карта штата</a>
                                             </li>
-                                            <li><a href="#hotels.html">Гостиницы</a>
+                                            <li><a class="active" href="#hotels.html">Гостиницы</a>
                                             </li>
                                         </ul>
+                                        <ul class="theader-menu__list--mobile hidden-lg">
+                                                <li>
+                                                    <button class="theader-menu__list--mobile-button">
+                                                        <i class="fa fa-bars"></i>
+                                                    </button>
+                                                    <ul class="theader-menu__list--dropdown">
+                                                        <li><a href="/index.html">Информация</a>
+                                                        </li>
+                                                        <li><a href="#index.html">Фото и видео</a>
+                                                        </li>
+                                                        <li><a href="#index.html">Карта штата</a>
+                                                        </li>
+                                                        <li><a class="active" href="#hotels.html">Гостиницы</a>
+                                                        </li>
+                                                    </ul>
+
+                                                </li>
+                                                <li style="">
+                                                    <a href="index.html"><img src="images/logo.png" alt="City Of Sedona">
+                                                    </a>
+                                                </li>
+                                            </ul>
                                     </nav>
                                 </div>
                             </div>
@@ -138,7 +157,7 @@
                                     <section class="hotel-search-result">
 
                                         <div class="hotel-search-result__photo">
-                                            <a href="#hotels.html"><img src="/InProgress/Main/images/hotel-amara-resort.jpg" alt="Гостиница Amara resort & spa">
+                                            <a href="#hotels.html"><img src="images/hotel-amara-resort.jpg" alt="Гостиница Amara resort & spa">
                                             </a>
                                         </div>
                                         <div class="hotel-search-result__description">
@@ -167,7 +186,7 @@
                                     <section class="hotel-search-result">
 
                                         <div class="hotel-search-result__photo">
-                                            <a href="#hotels.html"><img src="/InProgress/Main/images/hotel-desert.jpg" alt="Мотель Desert Quail Inn">
+                                            <a href="#hotels.html"><img src="images/hotel-desert.jpg" alt="Мотель Desert Quail Inn">
                                             </a>
                                         </div>
                                         <div class="hotel-search-result__description">
@@ -194,7 +213,7 @@
                                     <section class="hotel-search-result">
 
                                         <div class="hotel-search-result__photo">
-                                            <a href="#hotels.html"><img src="/InProgress/Main/images/hotel-villas.jpg" alt="Апартаменты Villas at Poco Diablo">
+                                            <a href="#hotels.html"><img src="images/hotel-villas.jpg" alt="Апартаменты Villas at Poco Diablo">
                                             </a>
                                         </div>
                                         <div class="hotel-search-result__description">
@@ -227,30 +246,32 @@
                         <div class="container">
                             <div class="row ">
                                 <div class="col-md-12">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <article class="main-footer-section">
-                                                <a class="main-footer-section__hashtag" href="#index.html">#VisitSedona</a>
-                                            </article>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <article class="main-footer-section">
-                                                <a href="#index.html">
-                                                    <div class="main-footer-social main-footer-social__twitter"></div>
-                                                </a>
-                                                <a href="#index.html">
-                                                    <div class="main-footer-social main-footer-social__facebook"></div>
-                                                </a>
-                                                <a href="#index.html">
-                                                    <div class="main-footer-social main-footer-social__youtube"></div>
-                                                </a>
-                                            </article>
-                                        </div>
-                                        <div class="col-md-4">
-                                            <article class="main-footer-section">
-                                                <p>Website by <a href="#index.html"><span class="main-footer-logos main-footer-logos__by"></span></a> for <a href="#index.html"><span class="main-footer-logos main-footer-logos__for"></span></a>
-                                                </p>
-                                            </article>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <article class="main-footer-section">
+                                                    <a class="main-footer-section__hashtag" href="#index.html">#VisitSedona</a>
+                                                </article>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <article class="main-footer-section">
+                                                    <a href="#index.html">
+                                                        <div class="main-footer-social main-footer-social__twitter"></div>
+                                                    </a>
+                                                    <a href="#index.html">
+                                                        <div class="main-footer-social main-footer-social__facebook"></div>
+                                                    </a>
+                                                    <a href="#index.html">
+                                                        <div class="main-footer-social main-footer-social__youtube"></div>
+                                                    </a>
+                                                </article>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <article class="main-footer-section">
+                                                    <p>Website by <a href="#index.html"><span class="main-footer-logos main-footer-logos__by"></span></a> for <a href="#index.html"><span class="main-footer-logos main-footer-logos__for"></span></a>
+                                                    </p>
+                                                </article>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -268,21 +289,9 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
     <script src="libs/jquery/jquery-1.11.1.min.js"></script>
-    <script src="libs/jquery-mousewheel/jquery.mousewheel.min.js"></script>
-    <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
-    <script src="libs/waypoints/waypoints-1.6.2.min.js"></script>
-    <script src="libs/scrollto/jquery.scrollTo.min.js"></script>
-    <script src="libs/owl-carousel/owl.carousel.min.js"></script>
-    <script src="libs/countdown/jquery.plugin.js"></script>
-    <script src="libs/countdown/jquery.countdown.min.js"></script>
-    <script src="libs/countdown/jquery.countdown-ru.js"></script>
-    <script src="libs/landing-nav/navigation.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/backbtn.min.js"></script>
     <script src="js/common.js"></script>
-    <!-- Yandex.Metrika counter -->
-    <!-- /Yandex.Metrika counter -->
-    <!-- Google Analytics counter -->
-    <!-- /Google Analytics counter -->
 </body>
 
 </html>

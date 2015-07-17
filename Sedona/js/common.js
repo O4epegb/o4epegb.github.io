@@ -1,4 +1,8 @@
 $(document).ready(function () {
+    
+    $(".theader-menu__list--mobile-button").click(function(){
+        $(this).next().slideToggle();
+    })
 
     //Таймер обратного отсчета
     //Документация: http://keith-wood.name/countdown.html
